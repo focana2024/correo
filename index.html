@@ -1,0 +1,168 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Bienvenido a AUTOPLAN</title>
+    <!--
+    The style block is collapsed on page load to save you some scrolling.
+    Postmark automatically inlines all CSS properties for maximum email client
+    compatibility. You can just update styles here, and Postmark does the rest.
+    -->
+    <style type="text/css">
+        /* cyrillic-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+
+        /* cyrillic */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+
+        /* greek-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF;
+        }
+
+        /* greek */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+            unicode-range: U+0370-03FF;
+        }
+
+        /* vietnamese */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
+    <style type="text/css">
+        div,
+        img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenido {
+            /* background: red; */
+            height: 700px;
+            width: 70%;
+            margin: 0 auto;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .logo {
+            width: 50%;
+            margin: 0 20px 0 0;
+        }
+
+        body {
+            background: url('../resources/layout.png');
+            /* height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="contenido">
+        <p> Estimado(a) Asociado(a): <strong>{{Asociado}}</strong></p>
+        <p>
+            Por medio de la presente reciba la más cordial Bienvenida al Programa de Fondos Colectivos
+            Autoplan - <strong>{{Programa}}</strong>, al mismo tiempo le expresamos nuestro agradecimiento por la
+            confianza depositada en
+            AUTOPLAN EAFCS.A.
+        </p>
+        <p>
+            En esta oportunidad le hacemos llegar la información y documentación correspondiente al contrato suscrito
+            con nosotros:
+        </p>
+
+        <ul>
+            <li><strong>Cronograma de Pagos de su Contrato N° {{Contrato}}</strong></li>
+            <li><strong>N° Grupo N° {{Grupo}} - Vacante: {{Vacante}}</strong></li>
+        </ul>
+
+        <p>
+            Del mismo modo, le recordamos que las modalidades de Adjudicación para adquirir su vehículo son a través de
+            Sorteo
+            y Remate en las asambleas mensuales de Adjudicación.
+        </p>
+
+        <p>
+            Para mayor información sobre nuestros servicios puede comunicarse por medio de nuestros Canales de Atención,
+            central telefónica 613-6633 Opción 2 o también ingresando a la página web
+            <a href="http://www.autoplan.pe/" target="_blank">
+                <span style='font-size:10.5pt;font-family:"Verdana",sans-serif'>www.autoplan.pe</span>
+            </a> donde podrá realizar sus solicitudes de consultas y requerimientos a través de nuestro formulario
+            <strong>"Escríbenos"</strong>
+            <a href="https://www.autoplan.pe/site/canales-de-atencion" target="_blank">
+                <span style='font-size:10.5pt;font-family:"Verdana",sans-serif'>
+                    https://www.autoplan.pe/site/canales-de-atencion
+                </span>
+            </a>
+        </p>
+
+        <p>
+            Finalmente lo invitamos a completar una Encuesta ingresando al siguiente enlace
+            <a href="https://forms.office.com/r/M8kq1Q0nVg" target="_blank">
+                <span
+                    style='font-size:10.5pt;font-family:"Verdana",sans-serif'>https://forms.office.com/r/M8kq1Q0nVg</span>
+            </a>
+        </p>
+
+    </div>
+    <!--<div class="logo">
+    <img src="http://www.autoplan.pe/img/logo-final.png" width="150">
+  </div>-->
+
+</body>
+
+</html>
